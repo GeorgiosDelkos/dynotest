@@ -1,0 +1,68 @@
+{
+  "programType": "predicate",
+  "specVersion": "1",
+  "encodingVersion": "1",
+  "concreteTypes": [
+    {
+      "type": "[struct std::b512::B512; 3]",
+      "concreteTypeId": "d573658d9a32406e490ee900ff035e6e7881f5f95aedbbcdd885c928fe1f9c3f",
+      "metadataTypeId": 1
+    },
+    {
+      "type": "bool",
+      "concreteTypeId": "b760f44fa5965c2474a3b471467a22c43185152129295af588b022ae50b50903"
+    }
+  ],
+  "metadataTypes": [
+    {
+      "type": "[_; 2]",
+      "metadataTypeId": 0,
+      "components": [
+        {
+          "name": "__array_element",
+          "typeId": 2
+        }
+      ]
+    },
+    {
+      "type": "[_; 3]",
+      "metadataTypeId": 1,
+      "components": [
+        {
+          "name": "__array_element",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "b256",
+      "metadataTypeId": 2
+    },
+    {
+      "type": "struct std::b512::B512",
+      "metadataTypeId": 3,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": 0
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [
+        {
+          "name": "signatures",
+          "concreteTypeId": "d573658d9a32406e490ee900ff035e6e7881f5f95aedbbcdd885c928fe1f9c3f"
+        }
+      ],
+      "name": "main",
+      "output": "b760f44fa5965c2474a3b471467a22c43185152129295af588b022ae50b50903",
+      "attributes": null
+    }
+  ],
+  "loggedTypes": [],
+  "messagesTypes": [],
+  "configurables": []
+}

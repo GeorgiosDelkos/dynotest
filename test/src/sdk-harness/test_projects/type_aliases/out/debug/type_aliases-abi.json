@@ -1,0 +1,202 @@
+{
+  "programType": "contract",
+  "specVersion": "1",
+  "encodingVersion": "1",
+  "concreteTypes": [
+    {
+      "type": "(b256, [enum std::identity::Identity; 2], struct IdentityAliasWrapper, struct Generic<struct IdentityAliasWrapper>, (b256, b256), str[9])",
+      "concreteTypeId": "ec3cb24991422faf6e361eb884f8ed25a29c1b4a1f64092ab1c92749520653fd",
+      "metadataTypeId": 1
+    },
+    {
+      "type": "(b256, b256)",
+      "concreteTypeId": "bc42ec26f2a17c5b23fc007d96b96bf35f8949ee156afdd789064210d881f7e0",
+      "metadataTypeId": 0
+    },
+    {
+      "type": "[enum std::identity::Identity; 2]",
+      "concreteTypeId": "2771ee6889dff227342d90c5f1ea6019ad8c8de50880048f823e1b926b26c13e",
+      "metadataTypeId": 2
+    },
+    {
+      "type": "b256",
+      "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+    },
+    {
+      "type": "str[9]",
+      "concreteTypeId": "bc5b9d5b85b9fb6e78bbb779cc67a95e60d6f291cd256a4c7dba66308dc7dfb8"
+    },
+    {
+      "type": "struct Generic<struct IdentityAliasWrapper>",
+      "concreteTypeId": "8a7e7398b46ee025d9806bafdc5b49c79945796a4336eca3d8438ac9e07c832f",
+      "metadataTypeId": 5,
+      "typeArguments": [
+        "89ac5ec9b4315f2ed598e3b8e7e5e62eac9f26919383019f823f9e78091695e3"
+      ]
+    },
+    {
+      "type": "struct IdentityAliasWrapper",
+      "concreteTypeId": "89ac5ec9b4315f2ed598e3b8e7e5e62eac9f26919383019f823f9e78091695e3",
+      "metadataTypeId": 6
+    }
+  ],
+  "metadataTypes": [
+    {
+      "type": "(_, _)",
+      "metadataTypeId": 0,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ]
+    },
+    {
+      "type": "(_, _, _, _, _, _)",
+      "metadataTypeId": 1,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 2
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 6
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 5,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 6
+            }
+          ]
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 0
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": "bc5b9d5b85b9fb6e78bbb779cc67a95e60d6f291cd256a4c7dba66308dc7dfb8"
+        }
+      ]
+    },
+    {
+      "type": "[_; 2]",
+      "metadataTypeId": 2,
+      "components": [
+        {
+          "name": "__array_element",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "enum std::identity::Identity",
+      "metadataTypeId": 3,
+      "components": [
+        {
+          "name": "Address",
+          "typeId": 7
+        },
+        {
+          "name": "ContractId",
+          "typeId": 8
+        }
+      ]
+    },
+    {
+      "type": "generic T",
+      "metadataTypeId": 4
+    },
+    {
+      "type": "struct Generic",
+      "metadataTypeId": 5,
+      "components": [
+        {
+          "name": "f",
+          "typeId": 4
+        }
+      ],
+      "typeParameters": [
+        4
+      ]
+    },
+    {
+      "type": "struct IdentityAliasWrapper",
+      "metadataTypeId": 6,
+      "components": [
+        {
+          "name": "i",
+          "typeId": 3
+        }
+      ]
+    },
+    {
+      "type": "struct std::address::Address",
+      "metadataTypeId": 7,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ]
+    },
+    {
+      "type": "struct std::contract_id::ContractId",
+      "metadataTypeId": 8,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [
+        {
+          "name": "x",
+          "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        },
+        {
+          "name": "y",
+          "concreteTypeId": "2771ee6889dff227342d90c5f1ea6019ad8c8de50880048f823e1b926b26c13e"
+        },
+        {
+          "name": "z",
+          "concreteTypeId": "89ac5ec9b4315f2ed598e3b8e7e5e62eac9f26919383019f823f9e78091695e3"
+        },
+        {
+          "name": "w",
+          "concreteTypeId": "8a7e7398b46ee025d9806bafdc5b49c79945796a4336eca3d8438ac9e07c832f"
+        },
+        {
+          "name": "u",
+          "concreteTypeId": "bc42ec26f2a17c5b23fc007d96b96bf35f8949ee156afdd789064210d881f7e0"
+        },
+        {
+          "name": "s",
+          "concreteTypeId": "bc5b9d5b85b9fb6e78bbb779cc67a95e60d6f291cd256a4c7dba66308dc7dfb8"
+        }
+      ],
+      "name": "foo",
+      "output": "ec3cb24991422faf6e361eb884f8ed25a29c1b4a1f64092ab1c92749520653fd",
+      "attributes": null
+    }
+  ],
+  "loggedTypes": [],
+  "messagesTypes": [],
+  "configurables": []
+}

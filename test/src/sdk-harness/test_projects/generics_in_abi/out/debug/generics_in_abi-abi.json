@@ -1,0 +1,468 @@
+{
+  "programType": "contract",
+  "specVersion": "1",
+  "encodingVersion": "1",
+  "concreteTypes": [
+    {
+      "type": "()",
+      "concreteTypeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+    },
+    {
+      "type": "b256",
+      "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+    },
+    {
+      "type": "bool",
+      "concreteTypeId": "b760f44fa5965c2474a3b471467a22c43185152129295af588b022ae50b50903"
+    },
+    {
+      "type": "enum EnumWGeneric<u64>",
+      "concreteTypeId": "383a806b80704b39c3e289e99206ce42a265a0b1307d9f3c8600d5a387807e80",
+      "metadataTypeId": 7,
+      "typeArguments": [
+        "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+      ]
+    },
+    {
+      "type": "str[2]",
+      "concreteTypeId": "25f82d8593ab240c80e14f5ca12cc6cc05fe471294c770351b9164422a4cd3cd"
+    },
+    {
+      "type": "str[3]",
+      "concreteTypeId": "0a92c8e0f509a2d3a66f68dd50408ce45a1a2596803b0bc983a69b34bd40dad2"
+    },
+    {
+      "type": "struct MegaExample<str[2],b256>",
+      "concreteTypeId": "a4371d736dd201e7a40f92636a024565ea8130bcecbbaff0390ae2a7dc349590",
+      "metadataTypeId": 15,
+      "typeArguments": [
+        "25f82d8593ab240c80e14f5ca12cc6cc05fe471294c770351b9164422a4cd3cd",
+        "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+      ]
+    },
+    {
+      "type": "struct PassTheGenericOn<str[3]>",
+      "concreteTypeId": "8c9fda1fbfaf20cc3bcfa99123b834bcddc61525ad1d3b05422536a9af747193",
+      "metadataTypeId": 16,
+      "typeArguments": [
+        "0a92c8e0f509a2d3a66f68dd50408ce45a1a2596803b0bc983a69b34bd40dad2"
+      ]
+    },
+    {
+      "type": "struct SimpleGeneric<u64>",
+      "concreteTypeId": "e049251e74935c809ab066911f314d053c529510dedde96aa26c270ba838f1c0",
+      "metadataTypeId": 17,
+      "typeArguments": [
+        "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+      ]
+    },
+    {
+      "type": "struct StructWArrayGeneric<u32>",
+      "concreteTypeId": "4e5538abac4efb2b07b06719783777e8ba7f1c24966b2eaec607fd756ea17f3e",
+      "metadataTypeId": 18,
+      "typeArguments": [
+        "d7649d428b9ff33d188ecbf38a7e4d8fd167fa01b2e10fe9a8f9308e52f1d7cc"
+      ]
+    },
+    {
+      "type": "struct StructWDiffTupleGeneric<u32,bool>",
+      "concreteTypeId": "e3854dbc90c72a6161f35c7d2e3f10cce9a0528f2dd8c98187334b48d64d4218",
+      "metadataTypeId": 19,
+      "typeArguments": [
+        "d7649d428b9ff33d188ecbf38a7e4d8fd167fa01b2e10fe9a8f9308e52f1d7cc",
+        "b760f44fa5965c2474a3b471467a22c43185152129295af588b022ae50b50903"
+      ]
+    },
+    {
+      "type": "struct StructWTupleGeneric<u32>",
+      "concreteTypeId": "e1835a4664e7133df90e2bd10e4311a6eefdba6a79584132b45b62d74f9237da",
+      "metadataTypeId": 20,
+      "typeArguments": [
+        "d7649d428b9ff33d188ecbf38a7e4d8fd167fa01b2e10fe9a8f9308e52f1d7cc"
+      ]
+    },
+    {
+      "type": "u32",
+      "concreteTypeId": "d7649d428b9ff33d188ecbf38a7e4d8fd167fa01b2e10fe9a8f9308e52f1d7cc"
+    },
+    {
+      "type": "u64",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+    }
+  ],
+  "metadataTypes": [
+    {
+      "type": "(_, _)",
+      "metadataTypeId": 0,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": 5
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 12
+        }
+      ]
+    },
+    {
+      "type": "(_, _)",
+      "metadataTypeId": 1,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": 4
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": "d7649d428b9ff33d188ecbf38a7e4d8fd167fa01b2e10fe9a8f9308e52f1d7cc"
+        }
+      ]
+    },
+    {
+      "type": "(_, _)",
+      "metadataTypeId": 2,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": 10
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 10
+        }
+      ]
+    },
+    {
+      "type": "(_, _)",
+      "metadataTypeId": 3,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": 10
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 11
+        }
+      ]
+    },
+    {
+      "type": "[_; 1]",
+      "metadataTypeId": 4,
+      "components": [
+        {
+          "name": "__array_element",
+          "typeId": 7,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 20,
+              "typeArguments": [
+                {
+                  "name": "",
+                  "typeId": 18,
+                  "typeArguments": [
+                    {
+                      "name": "",
+                      "typeId": 16,
+                      "typeArguments": [
+                        {
+                          "name": "",
+                          "typeId": 12
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "[_; 2]",
+      "metadataTypeId": 5,
+      "components": [
+        {
+          "name": "__array_element",
+          "typeId": 13
+        }
+      ]
+    },
+    {
+      "type": "[_; 2]",
+      "metadataTypeId": 6,
+      "components": [
+        {
+          "name": "__array_element",
+          "typeId": 9
+        }
+      ]
+    },
+    {
+      "type": "enum EnumWGeneric",
+      "metadataTypeId": 7,
+      "components": [
+        {
+          "name": "a",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "b",
+          "typeId": 11
+        }
+      ],
+      "typeParameters": [
+        11
+      ]
+    },
+    {
+      "type": "generic K",
+      "metadataTypeId": 8
+    },
+    {
+      "type": "generic L",
+      "metadataTypeId": 9
+    },
+    {
+      "type": "generic M",
+      "metadataTypeId": 10
+    },
+    {
+      "type": "generic N",
+      "metadataTypeId": 11
+    },
+    {
+      "type": "generic T",
+      "metadataTypeId": 12
+    },
+    {
+      "type": "generic U",
+      "metadataTypeId": 13
+    },
+    {
+      "type": "raw untyped ptr",
+      "metadataTypeId": 14
+    },
+    {
+      "type": "struct MegaExample",
+      "metadataTypeId": 15,
+      "components": [
+        {
+          "name": "a",
+          "typeId": 0
+        },
+        {
+          "name": "b",
+          "typeId": 22,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 1
+            }
+          ]
+        }
+      ],
+      "typeParameters": [
+        12,
+        13
+      ]
+    },
+    {
+      "type": "struct PassTheGenericOn",
+      "metadataTypeId": 16,
+      "components": [
+        {
+          "name": "one",
+          "typeId": 17,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 8
+            }
+          ]
+        }
+      ],
+      "typeParameters": [
+        8
+      ]
+    },
+    {
+      "type": "struct SimpleGeneric",
+      "metadataTypeId": 17,
+      "components": [
+        {
+          "name": "single_generic_param",
+          "typeId": 12
+        }
+      ],
+      "typeParameters": [
+        12
+      ]
+    },
+    {
+      "type": "struct StructWArrayGeneric",
+      "metadataTypeId": 18,
+      "components": [
+        {
+          "name": "a",
+          "typeId": 6
+        }
+      ],
+      "typeParameters": [
+        9
+      ]
+    },
+    {
+      "type": "struct StructWDiffTupleGeneric",
+      "metadataTypeId": 19,
+      "components": [
+        {
+          "name": "a",
+          "typeId": 3
+        }
+      ],
+      "typeParameters": [
+        10,
+        11
+      ]
+    },
+    {
+      "type": "struct StructWTupleGeneric",
+      "metadataTypeId": 20,
+      "components": [
+        {
+          "name": "a",
+          "typeId": 2
+        }
+      ],
+      "typeParameters": [
+        10
+      ]
+    },
+    {
+      "type": "struct std::vec::RawVec",
+      "metadataTypeId": 21,
+      "components": [
+        {
+          "name": "ptr",
+          "typeId": 14
+        },
+        {
+          "name": "cap",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "typeParameters": [
+        12
+      ]
+    },
+    {
+      "type": "struct std::vec::Vec",
+      "metadataTypeId": 22,
+      "components": [
+        {
+          "name": "buf",
+          "typeId": 21,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 12
+            }
+          ]
+        },
+        {
+          "name": "len",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "typeParameters": [
+        12
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [
+        {
+          "name": "_arg1",
+          "concreteTypeId": "a4371d736dd201e7a40f92636a024565ea8130bcecbbaff0390ae2a7dc349590"
+        }
+      ],
+      "name": "complex_test",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": null
+    },
+    {
+      "inputs": [
+        {
+          "name": "arg1",
+          "concreteTypeId": "383a806b80704b39c3e289e99206ce42a265a0b1307d9f3c8600d5a387807e80"
+        }
+      ],
+      "name": "enum_w_generic",
+      "output": "383a806b80704b39c3e289e99206ce42a265a0b1307d9f3c8600d5a387807e80",
+      "attributes": null
+    },
+    {
+      "inputs": [
+        {
+          "name": "arg1",
+          "concreteTypeId": "8c9fda1fbfaf20cc3bcfa99123b834bcddc61525ad1d3b05422536a9af747193"
+        }
+      ],
+      "name": "struct_delegating_generic",
+      "output": "8c9fda1fbfaf20cc3bcfa99123b834bcddc61525ad1d3b05422536a9af747193",
+      "attributes": null
+    },
+    {
+      "inputs": [
+        {
+          "name": "arg1",
+          "concreteTypeId": "e3854dbc90c72a6161f35c7d2e3f10cce9a0528f2dd8c98187334b48d64d4218"
+        }
+      ],
+      "name": "struct_w_diff_generic_in_tuple",
+      "output": "e3854dbc90c72a6161f35c7d2e3f10cce9a0528f2dd8c98187334b48d64d4218",
+      "attributes": null
+    },
+    {
+      "inputs": [
+        {
+          "name": "arg1",
+          "concreteTypeId": "e049251e74935c809ab066911f314d053c529510dedde96aa26c270ba838f1c0"
+        }
+      ],
+      "name": "struct_w_generic",
+      "output": "e049251e74935c809ab066911f314d053c529510dedde96aa26c270ba838f1c0",
+      "attributes": null
+    },
+    {
+      "inputs": [
+        {
+          "name": "arg1",
+          "concreteTypeId": "4e5538abac4efb2b07b06719783777e8ba7f1c24966b2eaec607fd756ea17f3e"
+        }
+      ],
+      "name": "struct_w_generic_in_array",
+      "output": "4e5538abac4efb2b07b06719783777e8ba7f1c24966b2eaec607fd756ea17f3e",
+      "attributes": null
+    },
+    {
+      "inputs": [
+        {
+          "name": "arg1",
+          "concreteTypeId": "e1835a4664e7133df90e2bd10e4311a6eefdba6a79584132b45b62d74f9237da"
+        }
+      ],
+      "name": "struct_w_generic_in_tuple",
+      "output": "e1835a4664e7133df90e2bd10e4311a6eefdba6a79584132b45b62d74f9237da",
+      "attributes": null
+    }
+  ],
+  "loggedTypes": [],
+  "messagesTypes": [],
+  "configurables": []
+}

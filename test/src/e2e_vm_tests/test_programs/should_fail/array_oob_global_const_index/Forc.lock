@@ -1,0 +1,8 @@
+[[package]]
+name = "array_oob_global_const_index"
+source = "member"
+dependencies = ["core"]
+
+[[package]]
+name = "core"
+source = "path+from-root-FA9005293D2605B5"
