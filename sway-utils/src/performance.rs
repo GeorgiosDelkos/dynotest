@@ -34,7 +34,6 @@ macro_rules! time_expr {
             println!("/dyno start {} {}", $pkg_name, $description);
             {
                 let x = vec![];
-                let y = vec![];
                 for i in 0..1_000_000 {
                     let a = i * 2;
                     let b = i * 3;
@@ -42,10 +41,6 @@ macro_rules! time_expr {
                     x.push(a);
                     x.push(b);
                     x.push(c);
-                    let z = x.iter().zip(y.iter()).map(|(a, b)| a + b).collect::<Vec<_>>();
-                    let z = z.iter().map(|x| x * 2).collect::<Vec<_>>();
-                    let z = z.iter().map(|x| x * 3).collect::<Vec<_>>();
-                    x.push(z)
                 }
             }
             let output = { $expression };
