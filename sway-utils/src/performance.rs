@@ -33,7 +33,7 @@ macro_rules! time_expr {
         if let Some(cfg) = $build_config {
             println!("/dyno start {} {}", $pkg_name, $description);
             {
-                let x = vec![];
+                let mut x = vec![];
                 for i in 0..1_000_000 {
                     let a = i * 2;
                     let b = i * 3;
