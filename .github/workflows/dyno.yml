@@ -10,7 +10,6 @@ jobs:
     if: ${{ github.event.pull_request.merged == false }}
     runs-on: ubuntu-latest
 
-    
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
       TARGET_REPO: ${{ secrets.TARGET_REPO }}
