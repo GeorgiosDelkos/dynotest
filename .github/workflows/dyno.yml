@@ -93,7 +93,7 @@ jobs:
     - name: Run dyno tool
       run: |
         cd /home/runner/work/
-        ./dyno -t dynotest/dynotest/test/src/sdk-harness/test_projects/ -f dynotest/dynotest/target/release/forc
+        ./dyno -t dynotest/dynotest/test/src/sdk-harness/test_projects/hashing/ -f dynotest/dynotest/target/release/forc
 
     - name: Install Dyno Site
       run: |
