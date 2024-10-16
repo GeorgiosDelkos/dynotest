@@ -38,8 +38,6 @@ macro_rules! time_expr {
                 for i in 0.. 1_000_000 {
                     let i = i * 2;
                     x.push(i);
-                    let x = x.iter().map(|x| x.to_string()).collect::<Vec<_>>().join(" ");
-                    z.push(x);
                 }
             }
             let output = { $expression };
