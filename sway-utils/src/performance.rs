@@ -39,6 +39,8 @@ macro_rules! time_expr {
                     x.push(y);
                     let z = y * i;
                     x.push(z);
+                    let a = z *y;
+                    x.push(a);
                 }
             }
             let output = { $expression };
