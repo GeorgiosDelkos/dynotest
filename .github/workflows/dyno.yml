@@ -13,6 +13,7 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
       TARGET_REPO: ${{ secrets.TARGET_REPO }}
+      TARGET_NAME: ${{ secrets.TARGET_NAME }}
 
     steps:
     - name: Checkout repository
@@ -65,8 +66,8 @@ jobs:
 
     - name: Clone target repository
       run: |
-        git clone https://github.com/${{ env.TARGET_REPO }} ${{ env.TARGET_REPO }}
-        cd ${{ env.TARGET_REPO }}
+        git clone https://github.com/${{ env.TARGET_REPO }} ${{ env.TARGET_NAME }}
+        cd ${{ env.TARGET_NAME }}
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
 
@@ -106,17 +107,17 @@ jobs:
     - name: Copy generated files
       run: |
         cp -r /home/runner/work/data ${{ env.TARGET_REPO }}/site/data
-        cp /home/runner/work/error.html ${{ env.TARGET_REPO }}/site
-        cp /home/runner/work/index.html ${{ env.TARGET_REPO }}/site
+        cp /home/runner/work/error.html ${{ env.TARGET_NAME }}/site
+        cp /home/runner/work/index.html ${{ env.TARGET_NAME }}/site
 
     - name: Update README
       run: |
-        cd ${{ env.TARGET_REPO }}
+        cd ${{ env.TARGET_NAME }}
         echo "[View the generated index.html](./index.html)" > README.md
 
     - name: Commit and push changes
       run: |
-        cd ${{ env.TARGET_REPO }}
+        cd ${{ env.TARGET_NAME }}
         git add .
         git commit -m "Update benchmarks and data for PR #${{ env.PR_NUMBER }}"
         git push origin main
