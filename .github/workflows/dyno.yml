@@ -43,10 +43,6 @@ jobs:
     - name: Check out PR branch
       run: |
         git checkout pr-${{ env.PR_NUMBER }}
-
-    - name: Build sway
-      run: |
-        cargo build --release --features profiler
         
     - name: Extract PR hash
       id: extract_pr_hash
@@ -66,6 +62,7 @@ jobs:
 
     - name: Clone target repository
       run: |
+        cd /home/runner/work/
         git clone https://github.com/${{ env.TARGET_REPO }} ${{ env.TARGET_NAME }}
         cd ${{ env.TARGET_NAME }}
         git config user.name "github-actions"
@@ -78,6 +75,10 @@ jobs:
         ls
         ls /home/runner/work/${{ env.TARGET_NAME }}site/data
         cp -r /home/runner/work/${{ env.TARGET_NAME }}site/data/* /home/runner/work/benchmarks/
+
+    - name: Build sway
+      run: |
+        cargo build --release --features profiler
 
     - name: Install dyno tool
       run: |
