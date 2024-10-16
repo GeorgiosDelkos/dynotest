@@ -89,7 +89,14 @@ jobs:
         cd dyno
         cargo build --release
         cp target/release/dyno /home/runner/work/
+        sudo rm -rf /home/runner/work/profiler
 
+    
+    - name: Monitor disk and memory usage before dyno run
+      run: |
+          df -h
+          free -m
+    
     - name: Run dyno tool
       run: |
         cd /home/runner/work/
