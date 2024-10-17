@@ -130,12 +130,12 @@ jobs:
 
     - name: Update README
       run: |
-        cd ${{ env.TARGET_NAME }}
+        cd /home/runner/work/${{ env.TARGET_NAME }}
         echo "[View the generated index.html](./index.html)" > README.md
 
     - name: Commit and push changes
       run: |
-        cd ${{ env.TARGET_NAME }}
+        cd /home/runner/work/${{ env.TARGET_NAME }}
         git add .
         git commit -m "Update benchmarks and data for PR #${{ env.PR_NUMBER }}"
         git push origin main
