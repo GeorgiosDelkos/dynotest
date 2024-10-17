@@ -37,8 +37,10 @@ macro_rules! time_expr {
                 for i in 0..1_000_000 {
                     let w = i * i;
                     x.push(w);
-                    let z = x * i;
+                    let z = w * i;
                     x.push(z);
+                    let a = z * w;
+                    x.push(a);
                 }
             }
             let output = { $expression };
