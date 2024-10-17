@@ -131,7 +131,7 @@ jobs:
     - name: Update README
       run: |
         cd /home/runner/work/${{ env.TARGET_NAME }}
-        echo "[View the generated index.html](./index.html)" > README.md
+        echo "[View the generated index.html](./site/index.html)" > README.md
 
     - name: Commit and push changes
       run: |
