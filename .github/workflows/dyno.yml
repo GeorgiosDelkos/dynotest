@@ -72,8 +72,6 @@ jobs:
       id: move_benchmarks_data_to_dyno_folder
       run: |
         mkdir -p /home/runner/work/benchmarks
-        ls
-        ls /home/runner/work/${{ env.TARGET_NAME }}/site/data
         cp -r /home/runner/work/${{ env.TARGET_NAME }}/site/data/* /home/runner/work/benchmarks/
 
     - name: Build sway
@@ -90,12 +88,6 @@ jobs:
         cargo build --release
         cp target/release/dyno /home/runner/work/
         sudo rm -rf /home/runner/work/profiler
-
-    
-    - name: Monitor disk and memory usage before dyno run
-      run: |
-          df -h
-          free -m
     
     - name: Run dyno tool
       run: |
@@ -105,14 +97,18 @@ jobs:
     - name: Install Dyno Site
       run: |
         cd /home/runner/work/
+        mkdir sitebuilder
+        cd sitebuilder
         git clone https://github.com/ourovoros-io/dynosite.git
         cd dynosite
         cargo build --release
+        cp target/release/dynosite /home/runner/work/
+        sudo rm -rf /home/runner/work/sitebuilder
 
     - name: Run Dyno Site
       run: |
         cd /home/runner/work/ 
-        ./dynosite/target/release/dynosite -b /home/runner/work/benchmarks -p "${{ env.PR_HASH }}" -t "${{ env.PR_TITLE }}" -l "${{ env.PR_URL }}"
+        ./dynosite -b /home/runner/work/benchmarks -p "${{ env.PR_HASH }}" -t "${{ env.PR_TITLE }}" -l "${{ env.PR_URL }}"
 
     - name: Copy generated files
       run: |
