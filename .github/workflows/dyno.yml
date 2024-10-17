@@ -124,9 +124,10 @@ jobs:
 
     - name: Copy generated files
       run: |
-        cp -r /home/runner/work/data ${{ env.TARGET_REPO }}/site/data
-        cp /home/runner/work/error.html ${{ env.TARGET_NAME }}/site
-        cp /home/runner/work/index.html ${{ env.TARGET_NAME }}/site
+        
+        cp -r /home/runner/work/data /home/runner/work/${{ env.TARGET_REPO }}/site/data
+        cp /home/runner/work/error.html /home/runner/work/${{ env.TARGET_NAME }}/site
+        cp /home/runner/work/index.html /home/runner/work/${{ env.TARGET_NAME }}/site
 
     - name: Update README
       run: |
