@@ -124,11 +124,7 @@ jobs:
 
     - name: Copy generated files
       run: |
-        echo "ls /home/runner/work/site"
-        ls /home/runner/work/site
-        echo "ls /home/runner/work/${{ env.TARGET_NAME }}/site"
-        ls /home/runner/work/${{ env.TARGET_NAME }}/site
-        cp -r /home/runner/work/site/data /home/runner/work/${{ env.TARGET_REPO }}/site/data
+        cp -r /home/runner/work/site/data /home/runner/work/${{ env.TARGET_REPO }}/site/
         cp /home/runner/work/site/error.html /home/runner/work/${{ env.TARGET_NAME }}/site
         cp /home/runner/work/site/index.html /home/runner/work/${{ env.TARGET_NAME }}/site
 
