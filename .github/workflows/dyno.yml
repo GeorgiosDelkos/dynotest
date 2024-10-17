@@ -124,19 +124,7 @@ jobs:
 
     - name: Copy generated files
       run: |
-        echo "printing /home/runner/work"
-        ls /home/runner/work
-        echo "printing /home/runner/work/site"
-        ls /home/runner/work/site
-        echo "printing /home/runner/work/site/data"
-        ls /home/runner/work/site/data
-        echo "printing /home/runner/work/${{ env.TARGET_NAME }}"
-        ls /home/runner/work/${{ env.TARGET_NAME }}
-        echo "printing /home/runner/work/${{ env.TARGET_NAME }}/site"
-        ls /home/runner/work/${{ env.TARGET_NAME }}/site
-        echo "printing /home/runner/work/${{ env.TARGET_NAME }}/site/data"
-        ls /home/runner/work/${{ env.TARGET_NAME }}/site/data
-        cp -r /home/runner/work/site/data /home/runner/work/${{ env.TARGET_REPO }}/site/
+        cp -r /home/runner/work/site/data /home/runner/work/${{ env.TARGET_NAME }}/site/
         cp /home/runner/work/site/error.html /home/runner/work/${{ env.TARGET_NAME }}/site
         cp /home/runner/work/site/index.html /home/runner/work/${{ env.TARGET_NAME }}/site
 
