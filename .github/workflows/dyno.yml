@@ -138,4 +138,4 @@ jobs:
         cd /home/runner/work/${{ env.TARGET_NAME }}
         git add .
         git commit -m "Update benchmarks and data for PR #${{ env.PR_NUMBER }}"
-        git push origin main
+        git push https://x-access-token:${{ env.GITHUB_TOKEN }}@github.com/${{ env.TARGET_REPO }}.git main
