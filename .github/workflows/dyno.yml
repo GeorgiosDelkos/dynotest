@@ -81,6 +81,8 @@ jobs:
           mkdir -p /home/runner/work/benchmarks/stats
           cp -r /home/runner/work/${{ env.TARGET_NAME }}/site/data/* /home/runner/work/benchmarks/
           cp -r /home/runner/work/${{ env.TARGET_NAME }}/site/data/${{ env.FOLDER_NAME }}/* /home/runner/work/benchmarks/stats
+          ls -l /home/runner/work/benchmarks
+          ls -l /home/runner/work/benchmarks/stats
 
     - name: Build sway
       run: |
