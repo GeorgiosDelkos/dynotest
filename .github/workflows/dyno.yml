@@ -104,7 +104,7 @@ jobs:
     - name: Run dyno tool
       run: |
         cd /home/runner/work/
-        ./dyno -t dynotest/dynotest/test/src/sdk-harness/test_projects/hashing/ -f dynotest/dynotest/target/release/forc
+        ./dyno -t sway/sway/test/src/sdk-harness/test_projects/ -f sway/sway/target/release/forc --flamegraph --data-only
 
     - name: Install Dyno Site
       run: |
@@ -120,7 +120,7 @@ jobs:
     - name: Run Dyno Site
       run: |
         cd /home/runner/work/ 
-        ./dynosite -b /home/runner/work/benchmarks -p "${{ env.PR_HASH }}" -t "${{ env.PR_TITLE }}" -l "${{ env.PR_URL }}"
+        ./dynosite -b /home/runner/work/benchmarks -p "${{ env.PR_HASH }}" -t "${{ env.PR_TITLE }}" -l "${{ env.PR_URL }}" --data-only
 
     - name: Copy generated files
       run: |
