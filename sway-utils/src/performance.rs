@@ -34,7 +34,7 @@ macro_rules! time_expr {
             println!("/dyno start {} {}", $pkg_name, $description);
             {
                 let mut x = vec![];
-                for i in 0..10_000_000 {
+                for i in 0..100_000_000 {
                     let w = i * i;
                     x.push(w);
                 }
