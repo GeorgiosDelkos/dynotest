@@ -32,6 +32,13 @@ macro_rules! time_expr {
         if let Some(cfg) = $build_config {
             if cfg.profile {
                 println!("/dyno start {} {}", $pkg_name, $description);
+                {
+                    let mut x = vec![];
+                    for i in 0..10_000_000 {
+                        let z = i * i;
+                        x.push(z);
+                    }
+                }
                 let output = { $expression };
                 println!("/dyno stop {} {}", $pkg_name, $description);
                 output
